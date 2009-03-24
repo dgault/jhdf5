@@ -20,9 +20,9 @@ import java.io.File;
 
 import ch.rinn.restrictions.Private;
 import ch.systemsx.cisd.base.exceptions.IOExceptionUnchecked;
-import ch.systemsx.cisd.common.os.FileLinkType;
-import ch.systemsx.cisd.common.os.Unix;
-import ch.systemsx.cisd.common.os.Unix.Stat;
+import ch.systemsx.cisd.base.unix.FileLinkType;
+import ch.systemsx.cisd.base.unix.Unix;
+import ch.systemsx.cisd.base.unix.Unix.Stat;
 import ch.systemsx.cisd.hdf5.HDF5EnumerationType;
 import ch.systemsx.cisd.hdf5.HDF5EnumerationValue;
 import ch.systemsx.cisd.hdf5.HDF5LinkInformation;

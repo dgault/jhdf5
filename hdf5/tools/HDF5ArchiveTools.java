@@ -38,9 +38,9 @@ import org.apache.commons.lang.ArrayUtils;
 
 import ch.rinn.restrictions.Private;
 import ch.systemsx.cisd.base.exceptions.IOExceptionUnchecked;
-import ch.systemsx.cisd.common.os.Unix;
-import ch.systemsx.cisd.common.os.Unix.Group;
-import ch.systemsx.cisd.common.os.Unix.Password;
+import ch.systemsx.cisd.base.unix.Unix;
+import ch.systemsx.cisd.base.unix.Unix.Group;
+import ch.systemsx.cisd.base.unix.Unix.Password;
 import ch.systemsx.cisd.hdf5.HDF5GenericCompression;
 import ch.systemsx.cisd.hdf5.HDF5OpaqueType;
 import ch.systemsx.cisd.hdf5.HDF5Reader;
