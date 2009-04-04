@@ -51,7 +51,7 @@ class HDF5ShortWriter implements IHDF5ShortWriter
     // Attributes
     // /////////////////////
 
-    public void addShortAttribute(final String objectPath, final String name, final short value)
+    public void setShortAttribute(final String objectPath, final String name, final short value)
     {
         assert objectPath != null;
         assert name != null;
@@ -61,7 +61,7 @@ class HDF5ShortWriter implements IHDF5ShortWriter
                 .shortToByte(value));
     }
 
-    public void addShortArrayAttribute(final String objectPath, final String name,
+    public void setShortArrayAttribute(final String objectPath, final String name,
             final short[] value)
     {
         assert objectPath != null;

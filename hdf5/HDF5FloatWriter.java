@@ -51,7 +51,7 @@ class HDF5FloatWriter implements IHDF5FloatWriter
     // Attributes
     // /////////////////////
 
-    public void addFloatAttribute(final String objectPath, final String name, final float value)
+    public void setFloatAttribute(final String objectPath, final String name, final float value)
     {
         assert objectPath != null;
         assert name != null;
@@ -61,7 +61,7 @@ class HDF5FloatWriter implements IHDF5FloatWriter
                 .floatToByte(value));
     }
 
-    public void addFloatArrayAttribute(final String objectPath, final String name,
+    public void setFloatArrayAttribute(final String objectPath, final String name,
             final float[] value)
     {
         assert objectPath != null;

@@ -50,7 +50,7 @@ class HDF5ByteWriter implements IHDF5ByteWriter
     // Attributes
     // /////////////////////
 
-    public void addByteAttribute(final String objectPath, final String name, final byte value)
+    public void setByteAttribute(final String objectPath, final String name, final byte value)
     {
         assert objectPath != null;
         assert name != null;
@@ -60,7 +60,7 @@ class HDF5ByteWriter implements IHDF5ByteWriter
                 .byteToByte(value));
     }
 
-    public void addByteArrayAttribute(final String objectPath, final String name, final byte[] value)
+    public void setByteArrayAttribute(final String objectPath, final String name, final byte[] value)
     {
         assert objectPath != null;
         assert name != null;

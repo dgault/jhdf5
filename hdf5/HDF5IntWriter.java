@@ -51,7 +51,7 @@ class HDF5IntWriter implements IHDF5IntWriter
     // Attributes
     // /////////////////////
 
-    public void addIntAttribute(final String objectPath, final String name, final int value)
+    public void setIntAttribute(final String objectPath, final String name, final int value)
     {
         assert objectPath != null;
         assert name != null;
@@ -61,7 +61,7 @@ class HDF5IntWriter implements IHDF5IntWriter
                 .intToByte(value));
     }
 
-    public void addIntArrayAttribute(final String objectPath, final String name,
+    public void setIntArrayAttribute(final String objectPath, final String name,
             final int[] value)
     {
         assert objectPath != null;
