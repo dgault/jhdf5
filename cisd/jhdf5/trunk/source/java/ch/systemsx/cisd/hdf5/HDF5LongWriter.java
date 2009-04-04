@@ -51,7 +51,7 @@ class HDF5LongWriter implements IHDF5LongWriter
     // Attributes
     // /////////////////////
 
-    public void addLongAttribute(final String objectPath, final String name, final long value)
+    public void setLongAttribute(final String objectPath, final String name, final long value)
     {
         assert objectPath != null;
         assert name != null;
@@ -61,7 +61,7 @@ class HDF5LongWriter implements IHDF5LongWriter
                 .longToByte(value));
     }
 
-    public void addLongArrayAttribute(final String objectPath, final String name,
+    public void setLongArrayAttribute(final String objectPath, final String name,
             final long[] value)
     {
         assert objectPath != null;

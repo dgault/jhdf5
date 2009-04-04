@@ -51,7 +51,7 @@ class HDF5DoubleWriter implements IHDF5DoubleWriter
     // Attributes
     // /////////////////////
 
-    public void addDoubleAttribute(final String objectPath, final String name, final double value)
+    public void setDoubleAttribute(final String objectPath, final String name, final double value)
     {
         assert objectPath != null;
         assert name != null;
@@ -61,7 +61,7 @@ class HDF5DoubleWriter implements IHDF5DoubleWriter
                 .doubleToByte(value));
     }
 
-    public void addDoubleArrayAttribute(final String objectPath, final String name,
+    public void setDoubleArrayAttribute(final String objectPath, final String name,
             final double[] value)
     {
         assert objectPath != null;
